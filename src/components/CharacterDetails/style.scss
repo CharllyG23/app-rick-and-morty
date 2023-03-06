@@ -1,0 +1,93 @@
+.py-modal {
+	@apply fixed
+        top-0
+        left-0
+        w-full
+        h-screen
+        z-50
+        bg-gray-900
+        bg-opacity-75
+        ;
+
+	&__container {
+		@apply w-full
+            h-full
+            relative
+            flex
+            items-center
+            justify-center
+            lg:p-8
+            sm:p-4;
+	}
+
+	&__content {
+		@apply relative
+            max-h-full
+            w-full
+            h-full
+            flex
+            flex-col
+            bg-slate-900
+            p-6
+            sm:px-14
+            sm:pt-8
+            sm:pb-12
+            sm:h-auto
+            sm:shadow-xl
+            sm:rounded-md
+            max-w-xl
+            overflow-auto;
+
+		&--close {
+			@apply w-full
+            flex
+            items-center
+            justify-start
+            flex-none
+            sm:justify-end;
+
+			.close-btn {
+				&-desktop {
+					@apply hidden sm:flex ;
+				}
+			}
+		}
+		
+		&_body{
+            @apply pt-6;
+        .image{
+            @apply flex justify-center items-center py-5 ;
+            img{
+                @apply w-36 rounded-full;
+            }   
+        }
+      
+      .title{
+        @apply text-lime-300 font-bold text-2xl text-center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .episode{
+        @apply text-lime-500 text-xl py-3 text-center font-semibold;
+      }
+      .info{
+        @apply py-3 text-base space-y-3 font-medium;
+      }
+        .statu{
+            @apply pt-3 flex justify-center;
+                &_status{
+                    @apply rounded px-2 text-white text-sm font-medium;
+                }
+            }
+		}
+	}
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	@apply transition-all duration-300 ease-linear;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	@apply opacity-0;
+}

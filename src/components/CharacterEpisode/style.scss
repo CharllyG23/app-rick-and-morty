@@ -1,0 +1,10 @@
+.characterEpisodes{
+    @apply text-white pt-3 flex justify-between;
+
+    .name{
+        @apply w-28;
+    }
+    .id{
+        @apply bg-amber-400 rounded-full px-2;
+    }
+}

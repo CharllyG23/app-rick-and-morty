@@ -1,0 +1,15 @@
+.banner{
+    &_container{
+      @apply w-full;
+      ._image{
+        @apply flex w-full absolute;
+        img{
+            @apply w-full lg:h-full h-[210px];
+        }
+      }
+    } 
+}
+
+.sectionList{
+    @apply relative pt-[200px] lg:pt-[610px];
+}

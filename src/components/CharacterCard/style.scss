@@ -1,0 +1,25 @@
+.characterCard{
+    @apply hover:scale-105 transform duration-150 inline-block text-center;
+
+    &_content{
+        @apply cursor-pointer shadow-xl rounded-md h-44 p-4 bg-white items-center justify-between flex;
+    }
+    .image_container{
+        @apply w-36 rounded-full;
+        img{
+            @apply w-full rounded-full;
+        }
+    }
+    .title{
+        @apply text-left font-bold  text-lg lg:text-xl text-lime-500;
+    }
+    .info{
+        @apply pt-2 text-left text-slate-600;
+    }
+    .statu{
+        @apply pt-3 flex;
+        &_status{
+            @apply rounded px-2 text-white text-sm font-medium;
+        }
+    }
+}
