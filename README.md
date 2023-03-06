@@ -1,6 +1,6 @@
 # Vue 3 + Vite
 
-# cryto-project
+# Rick and Morty
 
 🛠 Installation & Set Up
 
